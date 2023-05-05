@@ -1,0 +1,60 @@
+.navbarUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 5pt;
+    background-color: #e466c8;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.navbarLi {
+   float: left;
+
+}
+
+.navbarLi .navbarA:hover {
+    background-color: rgb(156, 47, 156);
+    
+}
+
+.navbarA {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbarTitle {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.cNotice {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    background-color: rgb(236, 236, 236);
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+}
