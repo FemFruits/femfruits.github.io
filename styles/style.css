@@ -55,6 +55,8 @@ dialog .columnFlex {
     width: 80%;
 
     min-height: 70vh;
+    
+    animation: 0.5s ease-out 0s 1 pageLoad;
 }
 
 .mainContent img {
@@ -68,6 +70,8 @@ footer {
     margin-bottom: 2rem;
     padding: 0.8rem;
     width: 80%;
+    
+    animation: 0.5s ease-out 0s 1 pageLoad;
 }
 
 
@@ -143,6 +147,15 @@ header {
     flex-direction: column;
 }
 
+/* || Animations */
+@keyframes pageLoad {
+  0% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 /* || Mobile Support */
 
