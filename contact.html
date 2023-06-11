@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>FemFruits > Contact</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <ul class="navbarUl">
-            <li class="navbarLi"><a class="navbarTitle">FemFruits's Cool Website</a></li>
-            <li class="navbarLi"><a href="index.html", class="navbarA">Home</a></li>
-            <li class="navbarLi"><a href="projects.html", class="navbarA">Projects</a></li>
-            <li class="navbarLi"><a href="blog.html", class="navbarA">Blog</a></li>
-            <li class="navbarLi"><a href="contact.html", class="navbarA">Contact</a></li>
-        </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>FemFruits Website</title>
+</head>
+
+<body>
+    <header>
         <div>
-        <h2>Contact Me!</h2>
-        <p>If you wish to get in contact with me, you can find me through:</p>
-        <ul>
-            <li>Discord: femfruits#2075</li>
-        </ul>
+            <a class="mobileMenu" onclick="document.getElementById('mobileMenu').showModal();">Menu</a>
+            <a class="headerButton" href="index.html">Home</a>
+            <a class="headerButton" href="projects.html">Projects</a>
+            <a class="headerButton" href="blog.html">Blog</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+        <div>
+            <a class="headerText">FemFruits Website!</a>
+        </div>
+    </header>
+
+    <div class="mainContent">
+        <h1>Contact Me</h1>
+        <p>If you wish to find me, you can find me on Discord, my ID is FemFruit#2075 :3</p>
     </div>
-    </body>
+
+    <footer>
+        <div class="collection8831">
+            <a href="https://aeriecat.space/" title="Bestest Girl :3"><img src="images/aeriecat.space.png"/></a>
+            <a href="https://ubuntu.com/" title="The least broken OS"><img src="images/ubuntu-88x31.gif"/></a>
+        </div>
+    </footer>
+    
+    <dialog id="mobileMenu">
+        <div class="columnFlex">
+            <h2>Choose A Page</h2>
+            <a class="mobileMenu" href="index.html">Home</a>
+            <a class="mobileMenu" href="projects.html">Projects</a>
+            <a class="mobileMenu" href="blog.html">Blog</a>
+            <a class="mobileMenu" href="contact.html">Contact</a>
+            <a class="mobileMenu" onclick="document.getElementById('mobileMenu').close();">Close</a>
+        </div>
+    </dialog>
+</body>
 </html>

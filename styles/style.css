@@ -1,0 +1,168 @@
+/* || Generic Elements */
+
+body {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("../images/featuredBackground.png");
+    background-attachment: fixed;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+dialog {
+    background-color: rgba(46, 46, 46, 0.8);
+    color: white;
+
+    border: 0px;
+    min-width: 50%;
+
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+}
+
+dialog .columnFlex {
+    gap: 0.2rem;
+}
+
+
+/* || Pages */
+.mainContent {
+    background-color: rgb(60, 60, 60);
+    border-radius: 15px;
+
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    width: 80%;
+
+    min-height: 70vh;
+}
+
+.mainContent img {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(60, 60, 60);
+    border-radius: 15px;
+
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    width: 80%;
+}
+
+
+/* || Header */
+
+header {
+    width: 100vw;
+    background-color: rgba(40, 40, 40, 0.6);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    position: fixed;
+    top: 0;
+
+    backdrop-filter: saturate(3) blur(5px);
+
+}
+
+.headerButton {
+    padding: 1rem;
+}
+
+.headerText {
+    padding: 1rem;
+}
+
+.active {
+    background-color: rgba(172, 74, 131, 0.5);
+    padding: 1rem;
+}
+
+.headerButton:hover {
+    background-color: rgba(50, 50, 50, 0.4);
+}
+
+.mobileMenu {
+    display: none;
+}
+
+/* || Misc */
+
+.collection8831 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.collection8831 a {
+    opacity: 1;
+}
+
+.collection8831 a:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.rowFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.columnFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* || Mobile Support */
+
+@media (max-width: 499px) {
+    .active {
+        display: none;
+    }
+    .headerButton {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: inline;
+        background-color: rgba(172, 74, 131, 0.5);
+        padding: 1rem;
+        user-select: none;
+    }
+    dialog .mobileMenu {
+        min-width: 50%;
+        border-radius: 15px;
+        text-align: center;
+    }
+  }

@@ -1,27 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>FemFruits > Blog</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <ul class="navbarUl">
-            <li class="navbarLi"><a class="navbarTitle">FemFruits's Cool Website</a></li>
-            <li class="navbarLi"><a href="index.html", class="navbarA">Home</a></li>
-            <li class="navbarLi"><a href="projects.html", class="navbarA">Projects</a></li>
-            <li class="navbarLi"><a href="blog.html", class="navbarA">Blog</a></li>
-            <li class="navbarLi"><a href="contact.html", class="navbarA">Contact</a></li>
-        </ul>
-        
-        <div><h2>Last Updated May 5th 2023</h2></div>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <title>FemFruits Website</title>
+</head>
+
+<body>
+    <header>
         <div>
-            <h3>May 5th 2023 2:40pm | Dividers</h3>
-            <p>Hai again! I've just figured out how to use divs and now I can separate my webpage into boxes! This probably wasn't worth a separate section but look how cool it is!!!</p>
+            <a class="mobileMenu" onclick="document.getElementById('mobileMenu').showModal();">Menu</a>
+            <a class="headerButton" href="index.html">Home</a>
+            <a class="headerButton" href="projects.html">Projects</a>
+            <a class="active" href="blog.html">Blog</a>
+            <a class="headerButton" href="contact.html">Contact</a>
         </div>
         <div>
-            <h3>May 5th 2023 2:30pm | New Website Theme</h3>
-            <p>Good afternoon everyone! I am currently in class as I type this so I can have some content for my website :P</p>
+            <a class="headerText">FemFruits Website!</a>
         </div>
-    </body>
+    </header>
+
+    <div class="mainContent">
+        <h1>Last Updated June 11th 2023</h1>
+        <h2>June 11th 2023 | Website Remake</h3>
+            <p>Hey everyone! I have been busy with learning website development, especially thanks to my college work which required me to make a website and I have been having more and more fun with creating websites! This new website now showcases some of the things I have been able to do lately including:</p>
+            <ul>
+                <li>Much <b>much</b> better scaling and media queries for proper mobile support</li>
+                <li>A nice dark theme looking website, much nicer on my eyes than the older website!</li>
+                <li>Amazing looking backdrop filters that makes the header look pretty!</li>
+                <li>Images that are actually inline! :O</li>
+            </ul>
+        <p>Before and After:</p>
+        <div class="rowFlex" style="gap: 0.5rem;">
+        <img src="images/before.png" style="width: 50%; border-radius: 10px;"/>
+        <img src="images/after.png" style="width: 50%; border-radius: 10px;"/>
+        </div>
+        <p>I really hope ya'll enjoy these new changes!</p>
+        <br>
+
+        <h2>May 5th 2023 | Dividers</h3>
+        <p>Hai again! I've just figured out how to use divs and now I can separate my webpage into boxes! This probably wasn't worth a separate section but look how cool it is!!!</p>
+        <br>
+        
+        <h2>May 5th 2023 | New Website Theme</h3>
+        <p>Good afternoon everyone! I am currently in class as I type this so I can have some content for my website :P</p>
+        <br>
+
+    </div>
+
+    <footer>
+        <div class="collection8831">
+            <a href="https://aeriecat.space/" title="Bestest Girl :3"><img src="images/aeriecat.space.png"/></a>
+            <a href="https://ubuntu.com/" title="The least broken OS"><img src="images/ubuntu-88x31.gif"/></a>
+        </div>
+    </footer>
+
+    <dialog id="mobileMenu">
+        <div class="columnFlex">
+            <h2>Choose A Page</h2>
+            <a class="mobileMenu" href="index.html">Home</a>
+            <a class="mobileMenu" href="projects.html">Projects</a>
+            <a class="mobileMenu" href="blog.html">Blog</a>
+            <a class="mobileMenu" href="contact.html">Contact</a>
+            <a class="mobileMenu" onclick="document.getElementById('mobileMenu').close();">Close</a>
+        </div>
+    </dialog>
+</body>
 </html>
